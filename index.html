@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+    <link rel="stylesheet" href="bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-dark bd" style="direction: rtl" onload="LoadStorage()">
+<div class="container direction-right">
+    <div class="col-10 m-auto border border-1 border-light bg-white min-vh-100">
+            <h4 class="text-dark m-3 ">ایجاد تسک</h4>
+            <label for="task"></label>
+            <input id="NewTaskInput" class="col-11 m-auto p-2 " style="direction: rtl"
+            placeholder="تسک را وارد کنید..." type="text" id="task"><br><br>
+            <button type="submit" class="btn bg-primary btn-outline-primary" onclick="InsertTask()">اضافه کردن </button>
+
+        <div>
+            <h4 class="text-dark m-4" >تسک ها</h4>
+            <table id="TaskList" border="single" class="m-auto w-75 table-bordered">
+            </table>
+            <button type="submit" class="btn bg-dark btn-outline-dark" onclick="ClearAll()">حذف همه</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+</body>
+<footer>
+    <script src="app.js"></script>
+</footer>
+</html>
